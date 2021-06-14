@@ -97,7 +97,13 @@ background-color: rgba(209, 219, 189, 0.5);
     padding: 10px 50px;
     background-color: rgba(0, 0, 0, 0.47);
     margin-top: 35px;
+    transition: all 0.3s ease-in-out;
 }
+
+.llamada-accion a:hover{
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
 /* FIN DE BANNER PRINCIPAL */
 
 /* SECCIÓN DE BIENVENIDA */
@@ -125,7 +131,11 @@ background-color: rgba(209, 219, 189, 0.5);
 }
 /* FIN DE SECCIÓN DE BIENVENIDA */
 
-/* SECCIÓN DE NOSOTROS */
+/* SECCIÓN SOBRE NOSOTROS */
+.nosotros{
+    padding-bottom: 80px;
+}
+
 .nosotros > .contenedor{
     display: flex;
     flex-direction: row;
@@ -178,3 +188,65 @@ background-color: rgba(209, 219, 189, 0.5);
     color: #0e96dd;
     font-size: 15px;
 }
+
+@media all and (min-width:769px) {
+    .nosotros{
+        padding-top: 80px;
+    }
+    .foto-equipo{
+        margin-right: 30px;
+    }
+    .conocenos{
+        padding-left: 30px;
+        text-align: left;
+    }
+}
+
+/* FIN DE SECCIÓN SOBRE NOSOTROS */
+
+/* PIE DE PÁGINA */
+.top-footer{
+    background-color: #193441;
+    height: 25px;
+}
+
+.center-footer{
+    background-color: #152d37;
+}
+
+.center-footer .contenedor{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.center-footer .widget{
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 35px;
+    color: #7a7a7a;
+    max-width: 270px;
+    margin: 0 auto;
+}
+
+.center-footer .widget h4{
+    padding-bottom: 35px;
+    font-size: 18px;
+}
+
+.center-footer .widget p{
+    font-size: 14px;
+}
+
+.bottom-footer{
+    background-color: #193441;
+    height: 25px;
+}
+
+.bottom-footer p{
+    color: #7a7a7a;
+    font-size: 12px;
+    text-align: center;
+}
+
+/* FIN DE PIE DE PÁGINA */
